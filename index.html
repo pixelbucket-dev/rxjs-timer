@@ -3,10 +3,32 @@
   <head>
     <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
+    <!--
+    JSPM Generator Import Map
+    Edit URL: https://generator.jspm.io/#U2NhYGBkDM0rySzJSU1hKKrIKnYw1zPUMwAAWj0OrxkA
+  -->
+    <script type="importmap">
+      {
+        "imports": {
+          "rxjs": "https://ga.jspm.io/npm:rxjs@7.1.0/dist/esm5/index.js"
+        },
+        "scopes": {
+          "https://ga.jspm.io/npm:rxjs@7.1.0/": {
+            "tslib": "https://ga.jspm.io/npm:tslib@2.1.0/tslib.es6.js"
+          }
+        }
+      }
+    </script>
+
+    <!-- ES Module Shims: Import maps polyfill for modules browsers without import maps support (all except Chrome 89+) -->
+    <script
+      async
+      src="https://ga.jspm.io/npm:es-module-shims@0.12.1/dist/es-module-shims.min.js"
+    ></script>
+
     <div id="app"></div>
 
     <label for="duration">Duration</label>
@@ -16,6 +38,6 @@
 
     <p id="time-text"></p>
 
-    <script src="src/index.js"></script>
+    <script type="module" src="index.js"></script>
   </body>
 </html>

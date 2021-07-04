@@ -1,5 +1,8 @@
 // RxJS v6+
-import { fromEvent, merge, timer } from "rxjs";
+// import { fromEvent, merge, timer } from "rxjs";
+// import { fromEvent, merge, timer } from 'https://dev.jspm.io/rxjs@7/_esm2015'
+import { fromEvent, merge, timer } from 'https://ga.jspm.io/npm:rxjs@7.1.0/dist/esm5/index.js'
+
 import {
   map,
   mapTo,
@@ -8,7 +11,8 @@ import {
   switchMap,
   takeWhile,
   withLatestFrom
-} from "rxjs/operators";
+} from "https://ga.jspm.io/npm:rxjs@7.1.0/dist/esm5/operators/index.js";
+
 
 const durationInput = document.querySelector("#timer-input");
 const startButton = document.querySelector("#start-button");
